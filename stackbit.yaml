@@ -23,7 +23,7 @@ pageData:
       - '[0].fields.sections.items[1]'
       - '[0].fields.sections.items[1].fields.title'
       - '[0].fields.sections.items[1].fields.subtitle'
-      - '[0].fields.sections.items[1].fields.features'
+      - '[0].fields.sections.items[1].fields.tools'
       - '[0].fields.sections.items[0].fields.actions'
       - '[0].fields.sections.items[0].fields.actions.items[0]'
       - '[0].fields.sections.items[0].fields.actions.items[0].fields.label'
@@ -238,7 +238,7 @@ models:
           type: string
       - type: image
         name: image
-        label: Featured Image
+        label: Tools Image
         description: The image shown in the blog post and blog feed
       - type: string
         name: image_alt
@@ -271,7 +271,7 @@ models:
             - contact_section
             - content_section
             - cta_section
-            - features_section
+            - tools_section
             - hero_section
             - team_section
   blog_feed_section:
@@ -355,9 +355,9 @@ models:
           - blue
         default: white
         description: The background color of the section
-  features_section:
+  tools_section:
     type: object
-    label: Features Section
+    label: Tools Section
     labelField: title
     fields:
       - type: string
@@ -365,12 +365,12 @@ models:
         label: Title
         description: The title of the section
       - type: list
-        name: features
-        label: Features
+        name: tools
+        label: Tools
         items:
           type: model
           models:
-            - feature
+            - tools
   hero_section:
     type: object
     label: Hero Section
@@ -476,9 +476,9 @@ models:
           type: reference
           models:
             - person
-  feature:
+  tools:
     type: object
-    label: Feature
+    label: Tools
     labelField: title
     fields:
       - type: string
@@ -488,7 +488,7 @@ models:
       - type: markdown
         name: content
         label: Content
-        description: The text content of the feature
+        description: The text content of the tools
       - type: enum
         name: align
         label: Align
@@ -501,7 +501,7 @@ models:
       - type: image
         name: image
         label: Image
-        description: The image of the feature
+        description: The image of the tool
       - type: string
         name: image_alt
         label: Image Alt Text

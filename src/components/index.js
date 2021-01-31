@@ -7,7 +7,7 @@ import BlogPostTags from './BlogPostTags';
 import ContactSection from './ContactSection';
 import ContentSection from './ContentSection';
 import CtaSection from './CtaSection';
-import FeaturesSection from './FeaturesSection';
+import ToolsSection from './ToolsSection';
 import Footer from './Footer';
 import Header from './Header';
 import HeroSection from './HeroSection';
@@ -25,7 +25,7 @@ export {
     ContactSection,
     ContentSection,
     CtaSection,
-    FeaturesSection,
+    ToolsSection,
     Footer,
     Header,
     HeroSection,
@@ -44,7 +44,7 @@ export default {
     ContactSection,
     ContentSection,
     CtaSection,
-    FeaturesSection,
+    ToolsSection,
     Footer,
     Header,
     HeroSection,

@@ -5,8 +5,8 @@
         "has_nav": true,
         "nav_links": [
             {
-                "label": "Features",
-                "url": "/features",
+                "label": "Tools",
+                "url": "/tools",
                 "style": "link"
             },
             {
